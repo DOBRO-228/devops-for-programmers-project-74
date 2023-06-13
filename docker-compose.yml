@@ -3,13 +3,8 @@ version: '3.7'
 services:
 
   app:
+    image: yunedobro/devops-for-programmers-project-74
     build:
       context: .
-      dockerfile: Dockerfile
-    volumes:
-      - app:/app
+      dockerfile: Dockerfile.production
     command: npm test
-
-volumes:
-  app:
-
