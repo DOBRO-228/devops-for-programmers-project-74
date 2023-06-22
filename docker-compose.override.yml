@@ -12,8 +12,8 @@ services:
       - ./app:/app
     environment:
       DATABASE_NAME: ${DATABASE_NAME}
-      DATABASE_USERNAME: ${POSTGRES_USER}
-      DATABASE_PASSWORD: ${POSTGRES_PASSWORD}
+      DATABASE_USERNAME: ${DATABASE_USERNAME}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
       DATABASE_PORT: ${DATABASE_PORT}
       DATABASE_HOST: ${DATABASE_HOST}
     command: bash -c 'sleep 3 && npm start'
