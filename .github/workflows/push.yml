@@ -10,6 +10,12 @@ jobs:
 
       - name: Create .env file
         run: cp .env.example .env
+      
+      - name: Set envs
+        run: |
+          ls -la
+          cat .env
+          echo "${DATABASE_HOST}"
 
       - name: Test
         run: make ci
