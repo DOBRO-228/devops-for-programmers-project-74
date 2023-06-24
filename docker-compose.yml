@@ -22,10 +22,9 @@ services:
     volumes:
       - pgdata-hexlet:/var/lib/postgresql/data
     environment:
-      DATABASE_NAME: ${DATABASE_NAME}
-      DATABASE_HOST: ${DATABASE_HOST}
       POSTGRES_USER: ${DATABASE_USERNAME}
       POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+      POSTGRES_DB: ${DATABASE_NAME}
 
 
 volumes:
